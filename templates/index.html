@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drowsiness Detection</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #00ffcc, #00c3ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .card {
+            margin: 30px auto;
+            padding: 20px;
+            width: fit-content;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+        }
+
+        img {
+            border-radius: 15px;
+            border: 3px solid #00ffcc;
+        }
+
+        .footer {
+            margin-top: 20px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🚗 Driver Drowsiness Detection</h1>
+
+<div class="card">
+    <img src="{{ url_for('video') }}" width="700">
+</div>
+
+<div class="footer">
+    Built with ❤️ using AI & Computer Vision
+</div>
+
+</body>
+</html>
